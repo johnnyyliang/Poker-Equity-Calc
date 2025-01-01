@@ -10,6 +10,9 @@ for rank in ranks:
 
 
 class Deck(object):
+    """
+    Deck class to track cards in deck.
+    """
     DECK = deck_cards
 
     def __init__(self):
