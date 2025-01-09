@@ -7,15 +7,248 @@
     <link rel = "stylesheet" href= "styles.css">
 </head>
 <body>
+    <h1>Poker Equity Calculator</h1>
+
+    <center>
     <div>
-        
+        <p>Hand One</p>
+        <select id="self1">
+            <center>
+                <option>🃑</option>
+                <option>🃁</option>
+                <option>🂱</option>
+                <option>🂡</option>
+                <option>🃞</option>
+                <option>🃎</option>
+                <option>🂾</option>
+                <option>🂮</option>
+                <option>🃝</option>
+                <option>🃍</option>
+                <option>🂽</option>
+                <option>🂭</option>
+                <option>🃛</option>
+                <option>🃋</option>
+                <option>🂻</option>
+                <option>🂫</option>
+                <option>🃚</option>
+                <option>🃊</option>
+                <option>🂺</option>
+                <option>🂪</option>
+                <option>🃙</option>
+                <option>🃉</option>
+                <option>🂹</option>
+                <option>🂩</option>
+                <option>🃘</option>
+                <option>🃈</option>
+                <option>🂸</option>
+                <option>🂨</option>
+                <option>🃗</option>
+                <option>🃇</option>
+                <option>🂷</option>
+                <option>🂧</option>
+                <option>🃖</option>
+                <option>🃆</option>
+                <option>🂶</option>
+                <option>🂦</option>
+                <option>🃕</option>
+                <option>🃅</option>
+                <option>🂵</option>
+                <option>🂥</option>
+                <option>🃔</option>
+                <option>🃄</option>
+                <option>🂴</option>
+                <option>🂤</option>
+                <option>🃓</option>
+                <option>🃃</option>
+                <option>🂳</option>
+                <option>🂣</option>
+                <option>🃒</option>
+                <option>🃂</option>
+                <option>🂲</option>
+                <option>🂢</option>
+            </center>
+        </select>
+
+        <select id="self2">
+            <center>
+                <option>🃑</option>
+                <option>🃁</option>
+                <option>🂱</option>
+                <option>🂡</option>
+                <option>🃞</option>
+                <option>🃎</option>
+                <option>🂾</option>
+                <option>🂮</option>
+                <option>🃝</option>
+                <option>🃍</option>
+                <option>🂽</option>
+                <option>🂭</option>
+                <option>🃛</option>
+                <option>🃋</option>
+                <option>🂻</option>
+                <option>🂫</option>
+                <option>🃚</option>
+                <option>🃊</option>
+                <option>🂺</option>
+                <option>🂪</option>
+                <option>🃙</option>
+                <option>🃉</option>
+                <option>🂹</option>
+                <option>🂩</option>
+                <option>🃘</option>
+                <option>🃈</option>
+                <option>🂸</option>
+                <option>🂨</option>
+                <option>🃗</option>
+                <option>🃇</option>
+                <option>🂷</option>
+                <option>🂧</option>
+                <option>🃖</option>
+                <option>🃆</option>
+                <option>🂶</option>
+                <option>🂦</option>
+                <option>🃕</option>
+                <option>🃅</option>
+                <option>🂵</option>
+                <option>🂥</option>
+                <option>🃔</option>
+                <option>🃄</option>
+                <option>🂴</option>
+                <option>🂤</option>
+                <option>🃓</option>
+                <option>🃃</option>
+                <option>🂳</option>
+                <option>🂣</option>
+                <option>🃒</option>
+                <option>🃂</option>
+                <option>🂲</option>
+                <option>🂢</option>
+            </center>
+        </select>
     </div>
-    <div>
-        <img class = "table" src = "images/Table.jpg">
-        <img class = "card self1" src = "images/redcard.jpg">
-        <img class = "card self2" src = "images/redcard.jpg">
-        <img class = "card other1" src = "images/bluecard.jpg">
-        <img class = "card other2" src = "images/bluecard.jpg">
-    </div>
+    </center>
+
+    <center>
+        <div>
+            <p>Hand Two</p>
+            <select id="other1">
+                <center>
+                    <option>🃑</option>
+                    <option>🃁</option>
+                    <option>🂱</option>
+                    <option>🂡</option>
+                    <option>🃞</option>
+                    <option>🃎</option>
+                    <option>🂾</option>
+                    <option>🂮</option>
+                    <option>🃝</option>
+                    <option>🃍</option>
+                    <option>🂽</option>
+                    <option>🂭</option>
+                    <option>🃛</option>
+                    <option>🃋</option>
+                    <option>🂻</option>
+                    <option>🂫</option>
+                    <option>🃚</option>
+                    <option>🃊</option>
+                    <option>🂺</option>
+                    <option>🂪</option>
+                    <option>🃙</option>
+                    <option>🃉</option>
+                    <option>🂹</option>
+                    <option>🂩</option>
+                    <option>🃘</option>
+                    <option>🃈</option>
+                    <option>🂸</option>
+                    <option>🂨</option>
+                    <option>🃗</option>
+                    <option>🃇</option>
+                    <option>🂷</option>
+                    <option>🂧</option>
+                    <option>🃖</option>
+                    <option>🃆</option>
+                    <option>🂶</option>
+                    <option>🂦</option>
+                    <option>🃕</option>
+                    <option>🃅</option>
+                    <option>🂵</option>
+                    <option>🂥</option>
+                    <option>🃔</option>
+                    <option>🃄</option>
+                    <option>🂴</option>
+                    <option>🂤</option>
+                    <option>🃓</option>
+                    <option>🃃</option>
+                    <option>🂳</option>
+                    <option>🂣</option>
+                    <option>🃒</option>
+                    <option>🃂</option>
+                    <option>🂲</option>
+                    <option>🂢</option>
+                </center>
+            </select>
+    
+            <select id="other2">
+                <center>
+                    <option>🃑</option>
+                    <option>🃁</option>
+                    <option>🂱</option>
+                    <option>🂡</option>
+                    <option>🃞</option>
+                    <option>🃎</option>
+                    <option>🂾</option>
+                    <option>🂮</option>
+                    <option>🃝</option>
+                    <option>🃍</option>
+                    <option>🂽</option>
+                    <option>🂭</option>
+                    <option>🃛</option>
+                    <option>🃋</option>
+                    <option>🂻</option>
+                    <option>🂫</option>
+                    <option>🃚</option>
+                    <option>🃊</option>
+                    <option>🂺</option>
+                    <option>🂪</option>
+                    <option>🃙</option>
+                    <option>🃉</option>
+                    <option>🂹</option>
+                    <option>🂩</option>
+                    <option>🃘</option>
+                    <option>🃈</option>
+                    <option>🂸</option>
+                    <option>🂨</option>
+                    <option>🃗</option>
+                    <option>🃇</option>
+                    <option>🂷</option>
+                    <option>🂧</option>
+                    <option>🃖</option>
+                    <option>🃆</option>
+                    <option>🂶</option>
+                    <option>🂦</option>
+                    <option>🃕</option>
+                    <option>🃅</option>
+                    <option>🂵</option>
+                    <option>🂥</option>
+                    <option>🃔</option>
+                    <option>🃄</option>
+                    <option>🂴</option>
+                    <option>🂤</option>
+                    <option>🃓</option>
+                    <option>🃃</option>
+                    <option>🂳</option>
+                    <option>🂣</option>
+                    <option>🃒</option>
+                    <option>🃂</option>
+                    <option>🂲</option>
+                    <option>🂢</option>
+                </center>
+            </select>
+        </div>
+        </center>
+
+        <center>
+            <button>Simulate</button>
+        </center>
 </body>
 </html>
