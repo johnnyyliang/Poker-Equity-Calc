@@ -39,6 +39,12 @@ class Hand(object):
         """
         return len(self.hand)
     
+    def __repr__(self):
+        s = ''
+        for card in self.hand:
+            s += repr(card)
+        return repr(self.hand[0]) + ' and ' + repr(self.hand[1])
+    
 
     def sort_value(self):
         """

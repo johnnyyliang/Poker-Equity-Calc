@@ -48,7 +48,7 @@ class Simulator(object):
             else:
                 ties += 1
         
-        return(f'Self wins {100 * wins_self/self.sims}%, Other wins {100 * wins_other/self.sims}%, Tie {100 * ties/self.sims}%')
+        return(f'{repr(selfhand)} wins {100 * wins_self/self.sims}%, {repr(otherhand)} wins {100 * wins_other/self.sims}%, Tie {100 * ties/self.sims}%')
         
 if __name__ == '__main__':
     simulation = Simulator()
