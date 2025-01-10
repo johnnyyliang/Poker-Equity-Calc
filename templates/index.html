@@ -4,15 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Poker Equity Calculator</title>
-    <link rel = "stylesheet" href= "styles.css">
+    <link rel = "stylesheet" href= "../static/styles.css">
 </head>
 <body>
     <h1>Poker Equity Calculator</h1>
 
+    <form method="post" action="/">
     <center>
     <div>
         <p>Hand One</p>
-        <select id="self1">
+        <select name = "self1" id="self1">
             <center>
                 <option>🃑</option>
                 <option>🃁</option>
@@ -69,7 +70,7 @@
             </center>
         </select>
 
-        <select id="self2">
+        <select name = "self2" id="self2">
             <center>
                 <option>🃑</option>
                 <option>🃁</option>
@@ -131,7 +132,7 @@
     <center>
         <div>
             <p>Hand Two</p>
-            <select id="other1">
+            <select name = "other1" id="other1">
                 <center>
                     <option>🃑</option>
                     <option>🃁</option>
@@ -188,7 +189,7 @@
                 </center>
             </select>
     
-            <select id="other2">
+            <select name = "other2" id="other2">
                 <center>
                     <option>🃑</option>
                     <option>🃁</option>
@@ -246,9 +247,17 @@
             </select>
         </div>
         </center>
+        
+        <div>
+            <center>
+                <button type = "submit">Simulate</button>
+            </center>
+        </div>
 
-        <center>
-            <button>Simulate</button>
-        </center>
+        <div id = "result">
+            <h2>Simulation Result</h2>
+            <p>{{ result }}</p>
+        </div>
+    </form>
 </body>
 </html>

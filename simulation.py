@@ -7,19 +7,20 @@ class Simulator(object):
     def __init__(self, num_sim = 10000):
         self.sims = num_sim
 
-    def run_sim(self):
-        holeself1_suit = str(input('Input a Suit for Self Hole Card 1: '))
-        holeself1_val = str(input('Input a Value for Self Hole Card 1: '))
-        holeself2_suit = str(input('Input a Suit for Self Hole Card 2: '))
-        holeself2_val = str(input('Input a Value for Self Hole Card 2: '))
+    def run_sim(self, selfhand = None, otherhand = None):
+        if selfhand == None:
+            holeself1_suit = str(input('Input a Suit for Self Hole Card 1: '))
+            holeself1_val = str(input('Input a Value for Self Hole Card 1: '))
+            holeself2_suit = str(input('Input a Suit for Self Hole Card 2: '))
+            holeself2_val = str(input('Input a Value for Self Hole Card 2: '))
 
-        holeother1_suit = str(input('Input a Suit for Other Hole Card 1: '))
-        holeother1_val = str(input('Input a Value for Other Hole Card 1: '))
-        holeother2_suit = str(input('Input a Suit for Other Hole Card 2: '))
-        holeother2_val = str(input('Input a Value for Other Hole Card 2: '))
+            holeother1_suit = str(input('Input a Suit for Other Hole Card 1: '))
+            holeother1_val = str(input('Input a Value for Other Hole Card 1: '))
+            holeother2_suit = str(input('Input a Suit for Other Hole Card 2: '))
+            holeother2_val = str(input('Input a Value for Other Hole Card 2: '))
 
-        selfhand = Hand([Card(holeself1_val, holeself1_suit), Card(holeself2_val, holeself2_suit)])
-        otherhand = Hand([Card(holeother1_val, holeother1_suit), Card(holeother2_val, holeother2_suit)])
+            selfhand = Hand([Card(holeself1_val, holeself1_suit), Card(holeself2_val, holeself2_suit)])
+            otherhand = Hand([Card(holeother1_val, holeother1_suit), Card(holeother2_val, holeother2_suit)])
 
 
         wins_self = 0
@@ -47,7 +48,7 @@ class Simulator(object):
             else:
                 ties += 1
         
-        print(f'Self wins {100 * wins_self/self.sims}%, Other wins {100 * wins_other/self.sims}%, Tie {100 * ties/self.sims}%')
+        return(f'Self wins {100 * wins_self/self.sims}%, Other wins {100 * wins_other/self.sims}%, Tie {100 * ties/self.sims}%')
         
 if __name__ == '__main__':
     simulation = Simulator()
