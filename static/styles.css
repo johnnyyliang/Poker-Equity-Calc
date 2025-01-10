@@ -10,5 +10,6 @@ body {
 }
 
 select {
-    margin: 50px;
+    margin: 40px;
+    font-size: 60px;
 }
