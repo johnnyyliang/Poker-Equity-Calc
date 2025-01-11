@@ -7,11 +7,15 @@
     <link rel = "stylesheet" href= "../static/styles.css">
 </head>
 <body>
+    <div>
+    <center>
     <h1>Poker Equity Calculator</h1>
+    </center>
 
     <form method="post" action="/">
     <center>
     <div>
+        <div class = "hand1">
         <p>Hand One</p>
         <select name = "self1" id="self1">
             <center>
@@ -126,11 +130,13 @@
                 <option>🂢</option>
             </center>
         </select>
+        </div>
     </div>
     </center>
 
     <center>
         <div>
+            <div class = "hand2">
             <p>Hand Two</p>
             <select name = "other1" id="other1">
                 <center>
@@ -245,19 +251,23 @@
                     <option>🂢</option>
                 </center>
             </select>
+            </div>
         </div>
         </center>
         
         <div>
             <center>
-                <button type = "submit">Simulate</button>
+                <button type = "submit" class = "simbtn">Simulate</button>
             </center>
         </div>
 
-        <div id = "result">
-            <h2>Simulation Result</h2>
+        <div id = "result" class = "result">
+            <center>
             <p>{{ result }}</p>
+            </center>
         </div>
+        <img src = "../images/Table.jpg" class = "tble">
     </form>
+    </div>
 </body>
 </html>

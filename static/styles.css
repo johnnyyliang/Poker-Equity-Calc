@@ -6,10 +6,51 @@
 }
 
 body {
-    background-color: grey;
+    background-color: #3b3b3b;
+    color: #FFFDD0;
 }
 
 select {
-    margin: 40px;
+    margin: 0px;
     font-size: 60px;
+}
+
+p {
+    font-size: 20px;
+}
+
+.tble {
+    width: 65%;
+    height: 100%;
+    display: block;
+    position: absolute;
+    top: 0px;
+    left: 17.5%;
+    z-index: -5;
+}
+
+.hand1 {
+    position: absolute;
+    top: 40%;
+    left: 35.4%;
+}
+
+.hand2 {
+    position: absolute;
+    top: 40%;
+    left: 54%;
+}
+
+.simbtn {
+    color: #FFFDD0;
+    background-color: #3b3b3b;
+    position: absolute;
+    left: 43.7%;
+    top: 60%;
+}
+
+.result {
+    position: absolute;
+    top: 90%;
+    left: 18%;
 }
