@@ -55,7 +55,7 @@ pip install flask
 python app.py
 ```
 
-2. Open a web browser and navigate to `http://localhost:5000`
+2. Open a web browser and navigate to `http://127.0.0.1:5000`
 
 3. Select cards for both hands using the dropdown menus
 
